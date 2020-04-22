@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+<body>
+
+    <header>
+        <h1>Simple Todo List</h1>
+        <p>Want to have an ordered life?</p>
+        <p>Then use this app to make your life easier!</p>    
+    </header>
+
+    <section>
+        <div class="task-form">
+            <form>
+                <div class="input-button">
+                    <input type="text" placeholder="create a task" id="task-input" />
+                    <button id="task-button">
+                        <i class="fas fa-plus-square"></i>
+                    </button>
+                </div>
+                <select class="select" id="cmbFilter">
+                    <option class="all" value="all">all</option>
+                    <option value="completed">completed</option>
+                    <option value="uncompleted">uncompleted</option>
+                </select>
+            </form>
+        </div>
+    </section>
+
+    <main>
+        <div class="task-wrapper">
+            <ul class="task-list" id="tasks-list"></ul>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
